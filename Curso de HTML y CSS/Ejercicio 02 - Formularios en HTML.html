@@ -26,7 +26,7 @@ Un botón de reset
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio 02</title>
+    <title>Ejercicio 02 - Formularios en HTML</title>
   </head>
   <body>
     <form action="/">
@@ -45,5 +45,21 @@ Un botón de reset
         <button type="reset">Reset</button>
       </div>
     </form>
+    <form action="/">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" placeholder="nombre"/>
+          <label for="edad">Edad:</label>
+          <input type="number" name="edad" id="edad" min="0" max="140"  placeholder="edad"/>
+        </div>
+        <div>
+          <label for="frase-favorita">Frase Favorita</label>
+          <textarea id="frase-favorita" namde="frase-favorita"placeholder="frase favorita"></textarea>
+        </div>
+        <div>
+          <button type="submit">Envio</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
   </body>
 </html>
