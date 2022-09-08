@@ -1,24 +1,24 @@
 <!--
-Enunciado del ejercicio:
+Crea un nuevo documento HTML que cumpla los siguientes parámetros:
 
-Crea un nuevo documento HTML e implementa lo siguiente:
+El título debe ser "Ejercicio 02 - Formularios en HTML"
 
-Utiliza la etiqueta de título para poner en el título "Ejercicio de Introducción a HTML en OpenBootcamp"
+El body debe contener un formulario que cumpla las siguientes características
 
-Dentro de la etiqueta body pon un comentario de dos líneas
+El atributo action será "/"
 
-Este es mi primer comentario de dos líneas
+Debe contener los siguientes campos:
 
-Aprendiendo a documentar mi código con OpenBootcamp
+Un campo de texto llamado "nombre"
 
-Crea una lista desordenada de tus tres vídeos de Youtube favoritos, siguiendo las siguientes pautas:
+Un campo numérico llamado "edad"
 
-Cada elemento de la lista tiene que ser un enlace
+Un campo de área de texto llamado "frase-favorita"
 
-El texto del enlace debe ser el título del vídeo
+Un botón de envío
+
+Un botón de reset
 -->
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,24 +26,40 @@ El texto del enlace debe ser el título del vídeo
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio de Introducción a HTML en OpenBootcamp</title>
+    <title>Ejercicio 02</title>
   </head>
   <body>
-    <!--Este es mi primer comentario de dos líneas
-    Aprendiendo a documentar mi código con OpenBootcamp-->
-    <ul>
-      <li>
-        <a href="https://www.youtube.com/watch?v=-XXRbd8XKgU">Abre Todos los Caminos | Atrae Abundancia | Dinero | Prosperidad Universal | Riqueza y Plenitud
-        </a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/watch?v=FnDzF5H5bkk">Música para Limpiar el Aura y Alinear los Chakras Mientras Duermes | Musica Relajante Para Dormir
-        </a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/watch?v=m6L1ug-Tj1E">Fuertes Lluvias Para Dormir 24/7 • Hermosa Música Relajante, Música Para Dormir, Alivio Del Estrés
-        </a>
-      </li>
-    </ul>
+    <form action="/">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" />
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" min="0" max="140" />
+      </div>
+      <div>
+        <label for="frase-favorita">Frase Favorita</label>
+        <textarea id="frase-favorita" namde="frase-favorita"></textarea>
+      </div>
+      <div>
+        <button type="submit">Envio</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+    <form action="/">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" placeholder="nombre"/>
+          <label for="edad">Edad:</label>
+          <input type="number" name="edad" id="edad" min="0" max="140"  placeholder="edad"/>
+        </div>
+        <div>
+          <label for="frase-favorita">Frase Favorita</label>
+          <textarea id="frase-favorita" namde="frase-favorita"placeholder="frase favorita"></textarea>
+        </div>
+        <div>
+          <button type="submit">Envio</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
   </body>
 </html>
